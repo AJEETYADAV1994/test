@@ -8,5 +8,7 @@ class Student(models.Model):
     fee=models.IntegerField(blank=True,null=True)
     department=models.CharField(max_length=100)
     rate=models.IntegerField(blank=True,null=True)
+    def __str__(self):
+        return self.name
 
 
